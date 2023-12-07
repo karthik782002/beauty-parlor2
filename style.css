@@ -1,0 +1,270 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+scroll-behavior: smooth;
+background-color: #000;
+}
+
+header{
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+}
+.headera{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo span{
+  color:  rgb(253, 123, 147);
+
+}
+.nav-menu-container ul{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  gap: 15px;
+  list-style: none;
+}
+
+.nav-menu-container ul li a{
+  text-decoration: none;
+  color: rgb(237, 227, 227);
+}
+.nav-menu-container ul li:hover{
+background-color:  rgb(253, 123, 147);
+width: fit-content;
+padding: 10px;
+border-radius:15px 0px 15px 0px;
+
+}
+.introduction img{
+  width: 1000px;
+  height: 700px;
+}
+.introduction{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+.intro{
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ .intro p{
+  color: rgb(253, 123, 147);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+h1{
+  color:  rgb(253, 123, 147);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+h1 span{
+  transition: .5s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+
+h1:hover span:nth-child(2){
+  margin-left: 5px
+}
+h1:hover span{
+  color:  rgb(253, 123, 147);
+  text-shadow: 0 0 10px  rgb(255, 245, 246);
+               0 0 20px  rgb(253, 123, 147);
+               0 0 70px  rgb(253, 123, 147);
+}
+#about{
+  height: 50rem;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+}
+.about-us{
+  padding-top:70px ;
+  width: 70%;
+  gap: 50px;
+  background-color: #000;
+  color:rgb(253, 123, 147);
+  font-family:  monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-us h2{
+font-size: 70px;
+}
+#abouti{
+text-align: center;
+font-size: 30px;
+color: rgb(253, 123, 147);
+ } 
+#services{
+width: 100vw;
+height: 100vh;
+background-color: black;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+color: black;
+}
+.ourservices{
+  
+  padding-top: 40px;
+width: 100vw;
+height: 100vh;
+background-color: rgb(253, 123, 147);
+display: flex;
+flex-direction:column;
+align-items:center;
+}
+
+.row{
+
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: start; 
+}
+
+span{ 
+  font-size: 50px;
+  font-family:  monospace;
+  text-shadow: 1px 1px 5px ;
+}
+.hair{
+  background-image: none;
+  width: 10vw;
+  height: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction:row;
+ align-items: center;
+  justify-content: space-evenly;
+  border-radius: 40px;
+   background-color: #000;
+  box-shadow:black 1px 1px 12px 2px;
+   transition: all 1s ;   
+}
+.hair:hover{
+  width: max-content;
+  box-shadow: #000 7px 7px 20px 4px;
+  transform: translate(20px,-5px)
+}
+.hair img{
+  height: 40vh;
+  width: 400px;
+}
+.content{
+  width: 400px;
+  height: 400px; 
+  top:0;
+  left: 0; 
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 1s;
+}
+.content:hover{
+  opacity: 1;
+
+}
+.content h1{
+  font-family: monospace;
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 15px;
+  transition: 2s;
+  text-shadow: 1px 1px 5px ;
+}
+.content p{
+  font-size: 25px;
+  color: #fff;
+}
+.content >*{
+  transform: translateY(25px);
+  transition: transform 1s;
+
+}
+.content hover >*{
+  transform: translatey(0px);
+}
+.products{
+  padding-top: 70px;
+  padding-bottom: 70px;
+ font-family: monospace;
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.products h1{
+  font-family: monospace;
+  color: #000;
+  text-shadow: 1px 1px 5px ;
+}
+.products p{
+  font-size: 30px;
+}
+#wholeProduct{  
+  width: 100vw;
+ height: 50vh;
+ background-color: rgb(255, 80, 112);
+ 
+}
+.product{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ align-content: center;
+}
+
+#productImg{
+  box-shadow: black 3px 3px 15px 4px;
+}
+.ourprotfolio{
+  padding: 50px;
+  text-shadow: 1px 1px 5px ;
+  background-color: rgb(253, 123, 147);
+  width: 95vw;
+  height: 50vh;
+  font-family:  monospace;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
